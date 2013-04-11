@@ -1,0 +1,21 @@
+Wunsch- und Aufgabenliste fuer die c't-Bot-Firmware bzw. ihr PC-Pendant:
+========================================================================
+
+Alle hier aufgefuehrten Punkte stehen noch aus. Wer moechte, ist herzlich eingeladen,
+uns Patches (siehe FAQ) zu schicken, die diese Liste sinnvoll ergaenzen. Aber auch ueber Loesungen
+fuer hier genannte Probleme freuen wir uns.
+
+Thema	Datei		Task
+==========================================================================
+gefahren		bot-logik.c	Low-Level-Verhalten müssen höherpriorisierte über gefahren warnen
+
+Anmeldung	command.c	Der Bot sollte auch auf Welcome-Nachrichten des Sims antworten
+Zeit	Timer.c		Auf dem PC existiert noch keine Routine, die die globalen Zeitvariablen aktualisiert
+Motor				Umrechnung der PWM-Werte in Geschwindigkeiten
+Sensoren			Linearisierung der Sensorwerte
+Sensoren			Berechnung von Translation und Rotation des Zentrums
+Sensoren			Umrechnung der Maussensordaten in Translation  und Rotation des Zentrums
+Sensoren			Abgleich von Maussensor- und Encoder-Daten
+goto	bot-logik.c	Goto-System laesst den Motoren keine Zeit zum Austrudeln.
+Info				Readme-Datei zu Variablen und Funktionen schreiben
+delay	delay.c		Delay von busy-wait auf timer-basiert umstellen

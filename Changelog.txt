@@ -1,0 +1,228 @@
+CHANGELOG fuer c't-Bot
+======================
+2006-04-29	Benjamin Benz (bbe@heise.de) Datentypen der Uebertragung der MouseDX/DY-Werte angepasst
+
+2006-04-29	Benjamin Benz (bbe@heise.de) Bot_simple_behaviour und Bot_simple2_behaviour vorbereitet und kommentiert
+
+2006-04-28	Benjamin Benz (bbe@heise.de) Loggen auf Konsole reaktiviert
+
+2006-04-28	Benjamin Benz (bbe@heise.de) Default Fernbedienung HQ RC Univers 29 (Code 334) eingefuehrt
+
+2006-04-28	Benjamin Benz (bbe@heise.de) Maussensor kommt nun auch mit Optimiertem Compilat klar (-Os)
+
+2006-04-27	Benjamin Benz (bbe@heise.de) UART-Empfangsroutinen entkaefert
+
+2006-04-26	Benjamin Benz (bbe@heise.de) Routinen zum simulieren (PC) von Maussensorbildern eingefuehrt
+
+2006-04-25	Benjamin Benz (bbe@heise.de) Routinen zum Auslesen von Maussensorbildern vorbereitet
+
+2006-04-20	Torsten Evers <tevers@onlinehome.de> Drehrichtungen fuer die Tasten 4,6 und 7,9 geaendert, so dass die Drehrichtung der Anordnung der Tasten auf der Fernbedienung entspricht
+
+2006-04-06  Frank Menzel(menzelfr@gmx.de) Not-Aus eingefuehrt nach PWR. Alle Verhalten werden deaktiviert und der vorheriger Zustand in der Verhaltens-Puffervariable gemerkt. Dann wird die Verhaltensanzeige Screen 2 aktiviert, wo nach Select die Verhalten wieder wie vorher eingeschaltet werden koennen. 
+
+2006-04-19 Joerg Bullmann (jbc@mac10.de) RC5-Codes fuer Technisat CIP Fernbedienung
+
+2006-04-13	Benjamin Benz (bbe@heise.de) 2 Codes für Conrad-Fb wie ind er Mailingliste diskutiert geaendert
+
+2006-04-18	Ulrich Scheffler (ulrich.scheffler@web.de) Codes fuer die Fernbedienung VIVANCO UR89, TV Modus (Code089) eingepflegt
+
+2006-04-18  Torsten Evers (tevers@onlinehome.de) bot_solve_maze erkennt Startfelder
+
+2006-04-16	Torsten Evers (tevers@onlinehome.de) bot_solve_maze + Hilfsverhalten eingefuegt
+
+2006-04-16 	Torsten Evers (tevers@onlinehome.de) bot_turn ueberarbeitet
+
+2006-04-16  Ulrich Scheffler (ulrich.scheffler@web.de) Kleine anpassungen an den rc5-codes
+
+2006-04-14  Carsten Giesen (info@cnau.de) TWI (I2C) Treiber und SRF10 Ansteuerung
+
+2006-04-13	Staudenmayer (andreas.staudenmayer@t-online.de) Batchdatei fuer Programmieradapter STK200 und viele baugleiche Programmer am Parallelport eingefuehrt
+
+2006-04-13	Benjamin Benz (bbe@heise.de) bot_avoid_col_behaviour veraendert, alle verhalten auf namenskonvention angepasst
+
+2006-04-13  Daniel Bachfeld (dab@heise.de) Bot-Geschwindigkeit in mm/s geaendert. regelung geht jetzt auch fuer Rueckwaertsfahrt
+
+2006-04-03	Benjamin Benz (bbe@heise.de)  bot_behave() nimmt die Arbeit erst auf, wenn alle Sensoren initialisiert sind
+
+2006-04-04  Torsten Evers (tevers@onlinehome.de) bot_turn ueberarbeitet
+
+2006-04-04  Daniel Bachfeld (dab@heise.de) Motorregelung eingefuehrt
+
+2006-04-03	Benjamin Benz (bbe@heise.de)  Für den simulierten Bot gilt immer die Standardfernbedienung
+
+2006-04-03  Benjamin Benz (bbe@heise.de)  Unterverzeichnis Documentation eingefuehrt
+
+2006-04-03  Frank Menzel(menzelfr@gmx.de) & Carsten Giesen (info@cnau.de) Die folgenden beiden Aenderungen eingereicht:
+										Verhaltensanzeige im Screen 3 an Stelle des 
+										   Counters via Define DISPLAY_BEHAVIOUR_AVAILABLE. Durch die Mehrfachnutzung der Zahlentasten (1-6) bekommen diese im Screen 3 die Bedeutung der
+                                           Umschaltmoeglichkeit eines Verhaltens (aktiv <-> inaktiv), wobei 1 und 0 fr aktiv und inaktiv stehen. 
+                                           Geblaettert werden kann mit der Taste RC5_CODE_VIEW und scharfgeschaltet wird via RC5_CODE_SELECT.
+                                           Fuer Eindeutigkeit sind Verhalten gleicher Prioritaet angepasst worden (bot_simple und slalom_behaviour).
+
+2006-03-27	Andreas Merkle (mail@blue-andi.de)	Zeiger, welche als Funktionszeiger verwendet wurden, ersetzt.
+
+2006-03-31	Frank Menzel (Menzelfr@gmx.de) RC5-Signale werden nur noch mit geaendertem Toggle-Bit akzeptiert
+
+2006-03-28 	Peter Koenig (pek@ctmagazin.de) Alle int in bot-logik.c/.h nach Absprache mit Christoph Grimmer in int16 bzw. int8 umgewandelt
+
+2006-03-24  Andreas Staudenmayer (andreas.staudenmayer@t-online.de) Fernbedienung VIVANCO UR89 eingefuegt
+
+2006-02-24	Fabian Recktenwald (fa.re.wal@gmx.de) Alle char-Datentypen in int8 oder uint8 umgewandelt
+
+2006-03-24  Benjamin Benz (bbe@heise.de)  Bugfix rc5_bot_next_behaviour
+
+2006-03-23  Benjamin Benz (bbe@heise.de)  Bugfix in bot_turn()
+
+2006-03-22	Andreas Merkle (mail@blue-andi.de)	Die Funktionen in delay_pc.c mit Funktionalitaet hinterlegt.
+
+2006-03-23  Benjamin Benz (bbe@heise.de)  Display-Delay auf optimierten Code angepasst, Verhaltensinitialisierung uebersichtlicher gestaltet
+
+2006-03-20	Carsten Giesen (info@cnau.de) Codes fuer die FB des MediaMPV von Hauappauge eingepflegt
+
+2006-03-19	Andreas Merkle (mail@blue-andi.de)	Timer Variablen ueber Funktionen auf dem PC geschuetzt (Thread-Safe).
+
+2006-03-21	Benjamin Benz (bbe@heise.de)  RC5-Mask-Definition in rc5-codes.h umgezogen
+
+2006-03-19	Lukas Jelonek (ljelonek@techfak.uni-bielefeld.de) Motoren verhalten sich nun links und rechts identisch
+
+2006-03-19	Benjamin Benz (bbe@heise.de)  Der simulierte Bot nutzt nun auch den Maussensor
+
+2006-03-19	Benjamin Benz (bbe@heise.de)  Der PC darf jetzt FB-Kommandos per UART an den realen Bot uebertragen
+
+2006-03-18  Michail Brzitwa (michail@brzitwa.de)    Definition und Selektierbarkeit verschiedener Fernbedienungen in rc5-codes.h
+
+2006-03-16	Peter Koenig (pek@heise.de)	Kommentare korrigiert, bot_olympic_behaviour fuer Release aktiviert
+
+2006-03-15	Benjamin Benz (bbe@heise.de)  Servos fuer PC-Bot eingefuehrt
+
+2006-03-11	Benjamin Benz (bbe@heise.de)  Select-Taste fuer Verhalten eingefuehrt, bot_olympic_behaviour deaktiviert
+
+2006-03-08	Andreas Merkle (mail@blue-andi.de)	Log-Funktionen eingefuehrt
+
+2006-03-05	Benjamin Benz (bbe@heise.de) Kommunikation Bot-PC ueberarbeitet,  Anmeldung am c't-Sim
+
+2006-03-07	Christoph Grimmer (c.grimmer@futurio.de) bot_complex_behaviour in bot_olympic_behaviour umbenannt.
+
+2006-03-05  Christoph Grimmer (c.grimmer@futurio.de) Das complex_behaviour und alle zugehoerigen Funktionen so umgeschrieben, dass sie in das behaviour-framework passen. Zu bot_drive_distance und bot_turn wurden entsprechende Botschaftsfunktionen und globale Variablen angelegt. ACHTUNG: Es kommt sicherlich zu Problemen, wenn die Radencoder waehrend eines Laufs von bot_turn oder bot_drive_distance ueberlaufen!
+
+2006-03-04	Andreas Merkle (mail@blue-andi.de)	Ausgaben auf das LCD-Display vereinfacht.
+
+2006-03-03	Benjamin Benz (bbe@heise.de) Routinen wie bot_goto() kann man nun mehrmals aufrufen
+
+2006-03-03	Benjamin Benz (bbe@heise.de) internes und externes CVS abgeglichen
+
+2006-03-03	Benjamin Benz (bbe@heise.de) Zustandsorientierte Regeln in das Framework eingefuegt
+
+2006-03-02	Benjamin Benz (bbe@heise.de) Remote-Display repariert
+
+2006-03-02	Benjamin Benz (bbe@heise.de) Display.c aufgeraeumt, Makefile angepasst
+
+2006-03-01	Benjamin Benz (bbe@heise.de) Kommunikation Bot-PC eingefuehrt
+
+2006-03-01	Benjamin Benz (bbe@heise.de) Routinen aus bot-2-sim.c verschoben in command.c
+
+2006-02-28	Benjamin Benz (bbe@heise.de) Uart-Kommunikation ueberarbeitet
+
+2006-02-28	Benjamin Benz (bbe@heise.de) Geschwindigkeitsvariabeln v_left und v_right eingefuehrt
+
+2006-02-28	Benjamin Benz (bbe@heise.de) Alle Anpassungen des Roboters an lokale Gegebenheiten in bot-local.h ausgelagert
+
+2006-02-28	Benjamin Benz (bbe@heise.de) TODO-Datei eingefuehrt
+
+2006-02-28	Benjamin Benz (bbe@heise.de) Es gibt jetzt (auf dem MCU) eine globale Zeit (siehe timer.h) 
+
+2006-02-27	Benjamin Benz (bbe@heise.de) Bugfix bei der Uebergabe der Lichtwerte
+
+2006-02-27	Markus Hennecke (markus-hennecke@markus-hennecke.de) Auswertung der Kommandozeile, Zielhost kann als Argument uebergeben werden.
+
+2006-02-27	Benjamin Benz (bbe@heise.de) Wertebereiche der sensoren dokumentiert
+
+2006-02-27	Benjamin Benz (bbe@heise.de) Cleanup im goto-System
+
+2006-02-23	Torsten Evers (tevers@onlinehome.de) Flash-Skript um Pruefung der Fuses erweitert
+
+2006-02-23	Benjamin Benz (bbe@heise.de) doppelte LDR-Variablen entfernt
+
+2006-02-23	Benjamin Benz (bbe@heise.de) Direction-Variablen eingefuehrt, in denen die Drehrichtung auch noch steht, wenn die Speed wieder auf Null ist
+
+2006-02-23	Ansgar Esztermann (ansgar@thphy.uni-duesseldorf.de) Big Endian Unterstuetzung im Netzwerkcode
+
+2006-02-23	Markus Hennecke (markus-hennecke@markus-hennecke.de) Bessere Handhabung weiterer Zielplattformen
+
+2006-02-23	Benjamin Benz (bbe@heise.de) Motor-Drehrichtung angepasst, BORDER_DANGEROUS angepasst, BEHAVIOUR_AVAILABLE eingefuehrt
+
+2006-02-23	Benjamin Benz (bbe@heise.de) Neues Testprogramm, um Resets zu analysieren
+
+2006-02-21 	Carsten Giesen (info@cnau.de) Die Variable Target_Speed wird limitiert
+
+2006-02-21 	Carsten Giesen (info@cnau.de) Das Register MCUCSR wird auf Screen 4 angezeigt
+
+2006-02-21  Torsten Evers (tevers@onlinehome.de) Linux-Skritpe zum Flashen und Fusen mit avrdude eingefuegt
+
+2006-02-20	Benjamin Benz (bbe@heise.de) Und nochmal Bugfix in bot_logik.c
+
+2006-02-20 	Carsten Giesen (info@cnau.de) Erweiterung um 3 zusaetzliche Screens fuer das Display
+
+2006-02-20	Benjamin Benz (bbe@heise.de) Bugfix in bot_logik.c nach einer Idee von (Fabian Recktenwald, fa.re.wal@gmx.de)
+
+2006-02-20	Benjamin Benz (bbe@heise.de) Bugfix in bot_behave()
+
+2006-02-18	Benjamin Benz (bbe@heise.de) Schoenheitskorrektur in den Maus-Routinen
+
+2006-02-19	Benjamin Benz (bbe@heise.de) RC5-Variable in sensor.h umgezogen
+
+2006-02-18	Benjamin Benz (bbe@heise.de) Watchdog sicherheitshalber deaktiviert
+
+2006-02-18	Andreas Staudenmayer (andreas.staudenmayer@t-online.de) Batch-Files zum Flashen/fusen unter Windows
+
+2006-02-18	Rolf Ebert (Rolf.Ebert@gmx.net) LCD-Ausgabe kann nun auch im Simulator erscheinen
+
+2006-02-18	Benjamin Benz (bbe@heise.de) Fuse-Bit-Dateien fuer avrdude eingefügt
+
+2006-02-17	Benjamin Benz (bbe@heise.de) Linearisierung der Distanzsensoren eingeführt
+
+2006-02-17	Benjamin Benz (bbe@heise.de) Stromsparen eingefuehrt
+
+2006-02-15	Andreas Merkle (mail@blue-andi.de) RC5-Fernbedienungscodes in eine Header-Datei ausgelagert. Fernbedienungsaktionen in einer Tabelle zusammengefasst. Dadurch sind Erweiterungen bzw. Aenderungen noch einfacher moeglich.
+
+2006-02-13	Benjamin Benz (bbe@heise.de) Bugfix im bot_goto_system()
+
+2006-02-10	Andreas Merkle (mail@blue-andi.de) Die Makros CLEAR und POSITION unter Windows mit Funktionalitaet hinterlegt.
+
+2006-02-03	Benjamin Benz (bbe@heise.de) Externes CVS mit internem überschrieben
+
+2006-02-02	Benjamin Benz (bbe@heise.de) Bugfix und Cleanup im goto_system
+
+2006-02-02	Benjamin Benz (bbe@heise.de) Maussensor angepasst
+
+2006-02-01	Benjamin Benz (bbe@heise.de) Verhalten bot_glance von Ralph Glass (ralph.glass@t-online.de) eingebaut
+
+2006-02-01	Benjamin Benz (bbe@heise.de) MCU-Code freigegeben
+
+2006-02-01	Benjamin Benz (bbe@heise.de) Verhaltensframework nochmals modifiziert. Additives Verhalten ist wieder raus.
+										 speed_l-Variablen und Co aus den Datenstrukturen raus ==> spart RAM
+										 goto-System deaktiviert sich nun selbsttaetig
+
+2006-02-01	Benjamin Benz (bbe@heise.de) Bugfix im Verhaltenscode. BOT_SPEED_IGNORE eingefuegt
+
+2006-02-01	Benjamin Benz (bbe@heise.de) Brake-Konstante angepasst
+
+2006-01-31	Benjamin Benz (bbe@heise.de) Kommentare aktualisiert, GPL-Infos eingebaut
+
+2006-01-31	Benjamin Benz (bbe@heise.de) Testprogramme erstellt und dabei kleine Fehler ausgebessert
+
+2006-01-30	Benjamin Benz (bbe@heise.de) Sensoren ueberarbeitet, Encoder reaktiviert
+
+2006-01-30	Benjamin Benz (bbe@heise.de) sensDistL und sensDistR initialisieren bun mit 1023 ==> keine Rotation zu Beginn mehr
+
+2006-01-28	Andreas Merkle (mail@blue-andi.de) Beim Ausfuehren von Verhalten werden Verhalten mit gleicher Prioritaet nun additiv behandelt und erst dann die Werte gesetzt. Im Verhalten bot_avoid_col wurde die Geschwindigkeitsaenderung nicht in die Verhaltenstruktur geschrieben. Dieses wurde korrigiert. Beim Anlegen einer Verhaltensstruktur wird nun ueberprueft, ob genuegend Heap-Speicher vorhanden ist.
+
+2006-01-27	Benjamin Benz (bbe@heise.de) Patch von Andreas Merkle (mail@blue-andi.de) eingebaut. Man kann Verhalten jetzt vereinfacht laden
+
+2006-01-26	Benjamin Benz (bbe@heise.de) Gesamtes Verhalten umgestellt. es gibt jetzt ein eigenes Verhaltens-Framework.
+
+2006-01-26	Benjamin Benz (bbe@heise.de) Kommentare geaendert
+
+2006-01-25	Benjamin Benz (bbe@heise.de) Status der LEDs wird nun an den Simulator uebertragen
+
+2006-01-24	Benjamin Benz (bbe@heise.de) Schreibweise des Changelogs nochmal veraendert
